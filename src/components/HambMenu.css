@@ -1,0 +1,104 @@
+.menu-btn {
+    position: fixed;
+    z-index: 3;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    .menu-btn-inner {
+        display: block;
+        width: 34px;
+        height: 4px;
+        background-color: #fff;
+    }
+    &:hover {
+        &:before {
+            transform: translateY(-3px);
+        }
+        &:after {
+            transform: translateY(3px);
+        }
+    }
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 34px;
+        height: 4px;
+        background-color: #fff;
+        transition: all 0.2s ease;
+    }
+    &:before {
+        top: 3px;
+        transform-origin: center;
+    }
+    &:after {
+        bottom: 3px;
+        transform-origin: center;
+    }
+}
+
+.menu-btn.menu-btn-close {
+    .menu-btn-inner {
+        opacity: 0;
+    }
+    &:before {
+        transform: rotate(38deg) translate3d(7px, 9px, 0);
+    }
+    &:after {
+        transform: rotate(140deg) translate3d(-8px, 10px, 0);
+    }
+}
+
+.menu-panel {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #320d7f;
+    color: #fff;
+    opacity: 0;
+}
+
+.menu-panel {
+    list-style: none;
+    li {
+        position: relative;
+        text-align: center;
+        line-height: 2;
+        font-size: 2.5em;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+            &:after {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            height: 5px;
+            background-color: #fff;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+    }
+}

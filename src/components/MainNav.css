@@ -1,0 +1,26 @@
+.main-nav {
+    margin: 30px auto;
+    display: flex;
+    list-style: none;
+}
+.main-nav li {
+    position: relative;
+    margin: 0 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.main-nav .progress-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    height: 5px;
+    background-color: #b3b3b3;
+}
+.main-nav .progress-item em {
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: 0%;
+}

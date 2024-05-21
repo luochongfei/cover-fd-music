@@ -1,0 +1,41 @@
+html {
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 30px;
+    img {
+        width: 100%;
+    }
+}
+
+.main {
+    background-color: #192336;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

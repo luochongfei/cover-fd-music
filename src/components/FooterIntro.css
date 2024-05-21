@@ -1,0 +1,10 @@
+.footer-intro {
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    width: 400px;
+    line-height: 1.6;
+    z-index: 10;
+    color: #fff;
+    font-size: 12px;
+}

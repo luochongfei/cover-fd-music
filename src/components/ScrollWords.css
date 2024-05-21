@@ -1,0 +1,12 @@
+.words-wrap {
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+}
+
+.words-wrap p {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+}
