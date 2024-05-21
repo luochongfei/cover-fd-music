@@ -17,4 +17,4 @@ jobs:
                   bucket: cover-fd-music
                   # e.g. "oss-cn-shanghai.aliyuncs.com"
                   endpoint: 'oss-cn-shenzhen.aliyuncs.com'
-                  folder: public
+                  folder: dist
